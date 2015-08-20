@@ -8,7 +8,9 @@ export CHROME_REVISION=323860
 # TODO - Update Chrome Revision when this fixed - https://code.google.com/p/chromedriver/issues/detail?id=1199
 #export CHROME_REVISION=`curl -s http://commondatastorage.googleapis.com/chromium-browser-snapshots/Linux_x64/LAST_CHANGE`
 
-export CHROMEDRIVER_VERSION=`curl -s http://chromedriver.storage.googleapis.com/LATEST_RELEASE`
+export CHROMEDRIVER_VERSION=2.18
+# TODO - Google isn't updating this, filing a bug!
+#`curl -s http://chromedriver.storage.googleapis.com/LATEST_RELEASE`
 
 sh -e /etc/init.d/xvfb start
 git submodule update --init
